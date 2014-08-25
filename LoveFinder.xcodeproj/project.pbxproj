@@ -34,6 +34,7 @@
 		2329A54E19AAA61200692DDC /* LoveFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2329A55319AAA61200692DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2329A55419AAA61200692DDC /* LoveFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveFinderTests.swift; sourceTree = "<group>"; };
+		23D4595119AB627900F6A4E0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 				2329A54519AAA61100692DDC /* Main.storyboard */,
 				2329A54819AAA61100692DDC /* Images.xcassets */,
 				2329A53F19AAA61100692DDC /* Supporting Files */,
+				23D4595119AB627900F6A4E0 /* MyPlayground.playground */,
 			);
 			path = LoveFinder;
 			sourceTree = "<group>";
@@ -395,6 +397,7 @@
 				2329A55A19AAA61200692DDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2329A55B19AAA61200692DDC /* Build configuration list for PBXNativeTarget "LoveFinderTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +406,7 @@
 				2329A55D19AAA61200692DDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
