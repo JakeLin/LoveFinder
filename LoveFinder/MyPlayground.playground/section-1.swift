@@ -9,3 +9,6 @@ let now = NSDate()
 (-now.timeIntervalSinceNow)
 
 println(now)
+
+var i: Int?
+println(i)
