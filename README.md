@@ -1,7 +1,7 @@
 LoveFinder
 ==========
 
-Love Finder is an iOS App written in Swift. This app is used for an online video training course. This app demonstrates how to common UIKit controls such as UILabel, UITextField, UISegmentedControl, UIDatePicker, UISlider, UISwitch, UIButton and UITextView.
+Love Finder is an iOS App written in Swift. This app is used for an online video training course. This app demonstrates how to use common UIKit controls such as UILabel, UITextField, UISegmentedControl, UIDatePicker, UISlider, UISwitch, UIButton and UITextView.
 
 ## Screenshots
 ![LoveFinder](https://raw.githubusercontent.com/JakeLin/LoveFinder/master/Screenshots/1.png)
