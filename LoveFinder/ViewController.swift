@@ -56,11 +56,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let components = gregorian.components(NSCalendarUnit.YearCalendarUnit, fromDate: birthday.date, toDate: now, options: NSCalendarOptions(0))
         let age = components.year
         
-        result.text = "\(name.text), \(age)岁, \(genderText), 身高\(height.text), \(hasPropertyText), 求交往！"
+        result.text = "\(name.text), \(age)岁, \(genderText), 身高\(height.text!), \(hasPropertyText), 求交往！"
     }
     
     // UITextFieldDelegate
-    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
