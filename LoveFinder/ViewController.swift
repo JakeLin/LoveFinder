@@ -53,10 +53,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // get the age
         let gregorian = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
         let now = NSDate()
-        let components = gregorian.components(NSCalendarUnit.YearCalendarUnit, fromDate: birthday.date, toDate: now, options: NSCalendarOptions(0))
-        let age = components.year
+        let components = gregorian?.components(NSCalendarUnit.YearCalendarUnit, fromDate: birthday.date, toDate: now, options: NSCalendarOptions(0))
+        let age = components?.year
         
-        result.text = "\(name.text), \(age)岁, \(genderText), 身高\(height.text!), \(hasPropertyText), 求交往！"
+        result.text = "\(name.text), \(age!)岁, \(genderText), 身高\(height.text!), \(hasPropertyText), 求交往！"
     }
     
     // UITextFieldDelegate
