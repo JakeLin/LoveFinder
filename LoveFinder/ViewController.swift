@@ -46,6 +46,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func okTapped(sender: AnyObject) {
+        let nameText = name.text?.characters.count > 0 ? name.text! : "无名氏"
         let genderText = gender.selectedSegmentIndex==0 ? "高富帅": "白富美"
         
         let hasPropertyText = hasProperty.on ? "有房": "没房"
@@ -56,7 +57,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let components = gregorian?.components([.Year], fromDate: birthday.date, toDate: now, options: NSCalendarOptions(rawValue: 0))
         let age = components?.year
         
-        result.text = "\(name.text), \(age!)岁, \(genderText), 身高\(height.text!), \(hasPropertyText), 求交往！"
+        result.text = "\(nameText), \(age!)岁, \(genderText), 身高\(height.text!), \(hasPropertyText), 求交往！"
     }
     
     // UITextFieldDelegate
