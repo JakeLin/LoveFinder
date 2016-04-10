@@ -39,8 +39,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     // Event handlers
     @IBAction func heightChanged(sender: AnyObject) {
         // round the step to int
-        var slider = sender as UISlider
-        var i = Int(slider.value)
+        let slider = sender as! UISlider
+        let i = Int(slider.value)
         slider.value = Float(i);
         height.text = "\(i) 厘米"
     }
@@ -53,7 +53,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         // get the age
         let gregorian = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
         let now = NSDate()
-        let components = gregorian?.components(NSCalendarUnit.YearCalendarUnit, fromDate: birthday.date, toDate: now, options: NSCalendarOptions(0))
+        let components = gregorian?.components([.Year], fromDate: birthday.date, toDate: now, options: NSCalendarOptions(rawValue: 0))
         let age = components?.year
         
         result.text = "\(name.text), \(age!)岁, \(genderText), 身高\(height.text!), \(hasPropertyText), 求交往！"
