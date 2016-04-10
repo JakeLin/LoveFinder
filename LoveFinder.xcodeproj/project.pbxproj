@@ -12,6 +12,7 @@
 		2329A54719AAA61100692DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2329A54519AAA61100692DDC /* Main.storyboard */; };
 		2329A54919AAA61100692DDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2329A54819AAA61100692DDC /* Images.xcassets */; };
 		2329A55519AAA61200692DDC /* LoveFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329A55419AAA61200692DDC /* LoveFinderTests.swift */; };
+		2C244DF31CB9E1BB004F2393 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C244DF11CB9E1BB004F2393 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		2329A55319AAA61200692DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2329A55419AAA61200692DDC /* LoveFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveFinderTests.swift; sourceTree = "<group>"; };
 		23D4595119AB627900F6A4E0 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		2C244DF21CB9E1BB004F2393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				2329A54119AAA61100692DDC /* AppDelegate.swift */,
 				2329A54319AAA61100692DDC /* ViewController.swift */,
 				2329A54519AAA61100692DDC /* Main.storyboard */,
+				2C244DF11CB9E1BB004F2393 /* Launch Screen.storyboard */,
 				2329A54819AAA61100692DDC /* Images.xcassets */,
 				2329A53F19AAA61100692DDC /* Supporting Files */,
 				23D4595119AB627900F6A4E0 /* MyPlayground.playground */,
@@ -155,7 +158,9 @@
 		2329A53419AAA61100692DDC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = rushjet;
 				TargetAttributes = {
 					2329A53B19AAA61100692DDC = {
@@ -191,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C244DF31CB9E1BB004F2393 /* Launch Screen.storyboard in Resources */,
 				2329A54719AAA61100692DDC /* Main.storyboard in Resources */,
 				2329A54919AAA61100692DDC /* Images.xcassets in Resources */,
 			);
@@ -242,6 +248,14 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		2C244DF11CB9E1BB004F2393 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C244DF21CB9E1BB004F2393 /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -265,6 +279,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -326,9 +341,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LoveFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rushjet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -337,9 +352,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = LoveFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rushjet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -358,6 +373,7 @@
 				);
 				INFOPLIST_FILE = LoveFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rushjet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveFinder.app/LoveFinder";
 			};
@@ -373,6 +389,7 @@
 				);
 				INFOPLIST_FILE = LoveFinderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rushjet.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveFinder.app/LoveFinder";
 			};
